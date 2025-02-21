@@ -1,16 +1,51 @@
+:root{
+    --gradient1:radial-gradient(circle, rgba(139,1,190,1) 0%, rgba(78,9,97,1) 59%, rgba(2,0,36,1) 100%);
+    --gradient2:linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --gradient3:linear-gradient(235deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    --gradient4:linear-gradient(56deg, #21D4FD 0%, #B721FF 100%);
+    --gradient5:linear-gradient(181deg, #000000 0%, #ad5aff 53%);
+    --black:#fb0000;
+    
+    
+}
 *{
-    margin: o;
+    margin: 0;
     padding: 0;
 
 }
 
 body{
-    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(139,1,190,1) 47%, rgba(78,9,97,1) 100%);
-    
+  width: auto;
+  height: 500rem;
+  background-image:url(image/ip.jpg)
+  bark
 }
-header .container{
-    display: flex;
+/* header{
+  background-image: var(--gradient5); 
+  
+} */
+header .container-fluid{
+  height: 10rem;
 }
-header .kotak{
-    background-color: aqua;
+header .container-fluid .kanan{
+ position: relative;
+  height: 30rem;
+  width: 30rem;
+  /* background-color: #21D4FD; */
+  margin-top: 3rem;
+  margin-right: 0;
+  margin-left:46rem
 }
+/* header .container-fluid img.poto{
+  margin-top: 3.6rem;
+  margin-right: 2.5rem;
+  position: absolute;
+  height: 21rem;
+  width: 20rem;
+  border-top-right-radius:8rem ;
+} */
+/* header .container-fluid .kanan img{
+  background-image:url(image/Desain\ tanpa\ judul.png);
+  position:absolute;
+} */
+
