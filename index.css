@@ -1,12 +1,14 @@
 :root{
-    --gradient1:radial-gradient(circle, rgba(139,1,190,1) 0%, rgba(78,9,97,1) 59%, rgba(2,0,36,1) 100%);
+    /* --gradient1:radial-gradient(circle, rgba(139,1,190,1) 0%, rgba(78,9,97,1) 59%, rgba(2,0,36,1) 100%);
     --gradient2:linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    --gradient3:linear-gradient(235deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    /* --gradient3:linear-gradient(235deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     --gradient4:linear-gradient(56deg, #21D4FD 0%, #B721FF 100%);
     --gradient5:linear-gradient(181deg, #000000 0%, #ad5aff 53%);
-    --black:#fb0000;
-    
-    
+    --black:#ff0000; */
+    --black:#000;
+    --gradient: linear-gradient(178deg, rgba(2,3,21,1) 49%, rgba(151,114,245,1) 79%, rgba(207,189,248,1) 94%);
+    --gradient1:radial-gradient(circle, rgba(2,3,21,1) 17%, rgba(151,114,245,1) 85%, rgba(207,189,248,1) 100%);
+   --gradient2: radial-gradient(circle, rgba(3,3,10,1) 15%, rgba(136,89,255,1) 84%, rgba(163,127,252,1) 86%, rgba(207,189,248,1) 100%, rgba(207,189,248,1) 100%);
 }
 *{
     margin: 0;
@@ -16,36 +18,54 @@
 
 body{
   width: auto;
-  height: 500rem;
-  background-image:url(image/ip.jpg)
-  bark
-}
-/* header{
-  background-image: var(--gradient5); 
+  height: 300rem;
+  background-color:black !important;
   
-} */
-header .container-fluid{
-  height: 10rem;
 }
-header .container-fluid .kanan{
- position: relative;
-  height: 30rem;
-  width: 30rem;
-  /* background-color: #21D4FD; */
-  margin-top: 3rem;
-  margin-right: 0;
-  margin-left:46rem
+header{
+  height: 35rem;
+  width: auto;
+  background-image: var(--gradient);
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  overflow: hidden;
 }
-/* header .container-fluid img.poto{
-  margin-top: 3.6rem;
-  margin-right: 2.5rem;
-  position: absolute;
-  height: 21rem;
-  width: 20rem;
-  border-top-right-radius:8rem ;
-} */
-/* header .container-fluid .kanan img{
-  background-image:url(image/Desain\ tanpa\ judul.png);
-  position:absolute;
-} */
+header .navbar-nav{
+  color: white !important;
+  text-decoration: none;
+}
+header .navbar-link{
+  color: white !important;
+  text-emphasis: none;
+}
 
+header .container-fluid{
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: center;
+  align-items: end;
+  height: 35rem;
+}
+header .container-fluid img{
+  height: 100%;
+  width: 50rem;
+  margin: 0.1rem 0;
+  position: relative;
+}
+
+header h1{
+  position: absolute;
+  color: white;
+  margin:4rem 4rem
+}
+header P{
+  position: absolute;
+  color: rgb(184, 184, 184);
+  margin:2.5rem 4rem;
+}
+header .btn{
+  position: absolute;
+  margin: 7.5rem 4rem;
+  background-color: #a37ffc;
+
+}
