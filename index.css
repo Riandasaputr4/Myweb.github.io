@@ -8,7 +8,7 @@
     --black:#000;
     --gradient: linear-gradient(178deg, rgba(2,3,21,1) 49%, rgba(151,114,245,1) 79%, rgba(207,189,248,1) 94%);
     --gradient1:radial-gradient(circle, rgba(2,3,21,1) 17%, rgba(151,114,245,1) 85%, rgba(207,189,248,1) 100%);
-   --gradient2: radial-gradient(circle, rgba(3,3,10,1) 15%, rgba(136,89,255,1) 84%, rgba(163,127,252,1) 86%, rgba(207,189,248,1) 100%, rgba(207,189,248,1) 100%);
+   --gradient2: radial-gradient(circle, rgba(3,3,10,1) 15%, rgb(134, 87, 255) 84%, rgba(163,127,252,1) 86%, rgba(207,189,248,1) 100%, rgba(207,189,248,1) 100%);
 }
 *{
     margin: 0;
@@ -53,19 +53,75 @@ header .container-fluid img{
   position: relative;
 }
 
-header h1{
+header .container-fluid .row .kiri h1{
   position: absolute;
   color: white;
-  margin:4rem 4rem
+  margin: 5rem -8rem;
+ 
 }
-header P{
+header .container-fluid .row .kiri P{
   position: absolute;
   color: rgb(184, 184, 184);
-  margin:2.5rem 4rem;
+  margin: 4rem -8rem;
 }
-header .btn{
+header .container-fluid .row .kiri .btn{
   position: absolute;
-  margin: 7.5rem 4rem;
   background-color: #a37ffc;
-
+  margin: 8.5rem -8rem;
 }
+
+/* end of header */
+
+/* section skill */
+.myskill .container{
+  height: 8rem;
+  position: absolute;
+  margin: -2rem 3.5rem;
+}
+.myskill .container .satu{
+  height: 8rem;
+  width: 10rem;
+  background-color:rgba(255, 255, 255, 0.2);
+  border-radius: 0.8rem;
+  align-content: center;
+  
+}
+.myskill .container .dua{
+  height: 8rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.8rem;
+  align-content: center;
+}
+.myskill .container .tiga{
+  height: 8rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.8rem;
+  align-content:center ;
+}
+.myskill .container .empat{
+  height: 8rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.8rem;
+  align-content: center;
+}
+.myskill .container .lima{
+  height: 8rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.8rem;
+  align-content: center;
+}
+
+/* section mini project */
+/* .mini_project .container-fluid{
+  margin-top: 8rem;
+  background-color: #a37ffc;
+  display: grid;
+  gap: 50px;
+} */
+/* section end mini project */
+
+
