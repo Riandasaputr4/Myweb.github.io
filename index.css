@@ -9,6 +9,7 @@
     --gradient: linear-gradient(178deg, rgba(2,3,21,1) 49%, rgba(151,114,245,1) 79%, rgba(207,189,248,1) 94%);
     --gradient1:radial-gradient(circle, rgba(2,3,21,1) 17%, rgba(151,114,245,1) 85%, rgba(207,189,248,1) 100%);
    --gradient2: radial-gradient(circle, rgba(3,3,10,1) 15%, rgb(134, 87, 255) 84%, rgba(163,127,252,1) 86%, rgba(207,189,248,1) 100%, rgba(207,189,248,1) 100%);
+   --gradient3: linear-gradient(67deg, rgba(3,3,10,1) 15%, rgba(136,89,255,1) 78%, rgba(163,127,252,1) 87%, rgba(207,189,248,1) 100%, rgba(207,189,248,1) 100%);
 }
 *{
     margin: 0;
@@ -17,8 +18,6 @@
 }
 
 body{
-  width: auto;
-  height: 300rem;
   background-color:black !important;
   
 }
@@ -32,13 +31,26 @@ header{
 }
 header .navbar-nav{
   color: white !important;
+  background-color: #941212;
   text-decoration: none;
-}
-header .navbar-link{
-  color: white !important;
-  text-emphasis: none;
+  margin-right: 3rem;
+
 }
 
+header .nav.scrolled {
+  display: flex;
+  justify-self: center;
+  margin-top: 1rem;
+  padding-right: 5rem;
+  text-justify: center;
+  width: 25rem;
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  transition: background-color 0.1000s ease-out;
+  position: fixed;
+
+}
 header .container-fluid{
   display: flex;
   /* background-color: aqua; */
@@ -77,51 +89,141 @@ header .container-fluid .row .kiri .btn{
   height: 8rem;
   position: absolute;
   margin: -2rem 3.5rem;
+
+  
 }
-.myskill .container .satu{
+.myskill .container .col{
   height: 8rem;
   width: 10rem;
   background-color:rgba(255, 255, 255, 0.2);
   border-radius: 0.8rem;
   align-content: center;
-  
-}
-.myskill .container .dua{
-  height: 8rem;
-  width: 10rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0.8rem;
-  align-content: center;
-}
-.myskill .container .tiga{
-  height: 8rem;
-  width: 10rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0.8rem;
-  align-content:center ;
-}
-.myskill .container .empat{
-  height: 8rem;
-  width: 10rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0.8rem;
-  align-content: center;
-}
-.myskill .container .lima{
-  height: 8rem;
-  width: 10rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0.8rem;
-  align-content: center;
+  transition: 0.5s;
 }
 
 /* section mini project */
-/* .mini_project .container-fluid{
-  margin-top: 8rem;
-  background-color: #a37ffc;
-  display: grid;
-  gap: 50px;
-} */
+.mini_project .container-fluid{
+  margin-top: 15rem;
+  
+  
+}
+.mini_project .container-fluid h4{
+  margin-bottom: 4rem;
+  color: white;
+}
+.mini_project .container-fluid img{
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
 /* section end mini project */
 
+/* section experiens  */
+.experience {
+  height: 30rem;
+  width: 75rem;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #282c36; /* Tambahan warna latar untuk kontras */
+  border-radius: 10px; /* Membuat tampilan lebih lembut */
+}
+
+.experience h4 {
+  color: white;
+  margin-bottom: 4rem;
+  text-align: center; /* Membuat judul lebih rapi */
+}
+
+.experience .container {
+  display: flex;
+  gap: 2rem; /* Memberi jarak antar kartu */
+  flex-wrap: wrap; /* Agar responsive */
+  justify-content: center;
+}
+
+.experience .container .card {
+  height: 25rem;
+  width: 22rem;
+  background-color: rgba(207, 189, 248, 1);
+  border-radius: 15px; /* Membuat sudut lebih halus */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
+              0 6px 6px rgba(0, 0, 0, 0.15); /* Efek shadow lebih menarik */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience .container .card:hover {
+  transform: translateY(-10px); /* Efek mengangkat kartu saat hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 
+              0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience .container .card h5 {
+  color: black;
+  margin: 1rem 0;
+  text-align: center;
+}
+.experience .container .card h6{
+  color: #000;
+  text-align: center;
+}
+
+.experience .container .card p {
+  margin-top: 2rem;
+  padding: 0 1rem; /* Memberikan ruang agar teks lebih rapi */
+  font-size: 1rem;
+  color: #333;
+}
+
+/* .experience{
+  height: 30rem;
+  width: 75rem;
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
+}
+.experience h4{
+  color: white;
+  margin-bottom: 4rem;
+}
+.experience .container .card{
+  height: 25rem; 
+  width: 22rem;
+  background-color: rgba(207,189,248,1);
+}
+.experience .container .card h5{
+  color: black;
+  margin: 1rem 0;
+
+}
+.experience .container .card p{
+  margin-top: 2rem;
+  
+} */
+/* end */
+.profile .container{
+  height: 35rem;
+  width: 75rem;
+  margin: 6rem 0;
+  background-image: var(--gradient3);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  overflow: hidden;
+}
+
+.profile .container .kiri img{
+  height: 28rem;
+  width: 30rem;
+  border-radius: 100%;
+  position: relative;
+  margin: 4rem 1rem;
+}
+
+.profile .container  .kanan{
+  padding: 4rem 3rem;
+}
+.profile .container .kanan h4{
+  color:white;
+}
+.profile .container .kanan p{
+  color: white;
+  margin-top:3rem ; 
+}
 

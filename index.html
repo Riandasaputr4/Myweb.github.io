@@ -17,33 +17,61 @@
   <!-- This is header -->
     <header>
         <nav class="navbar-nav">
-          <ul class="nav justify-content-end">
+          <ul class="nav fixed-top justify-content-end" style="margin: 1rem 5rem;">
             <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#profile">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <a class="nav-link" id="whatsapp-button" href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
           <div class="container-fluid">
             <div class="row">
               <div class="kiri col-md-6">
-                <p>HELLO I,M</p>
+                <p>HELLO I'M</p>
                 <h1>RIANDA SAPUTRA</h1>
-                <button type="button" class="btn btn-secondary">CONTACT</button>
+                <button><a href="#" id="whatsapp-button" class="btn btn-success">Chat via WhatsApp</a>
+                </button>
               </div>
               <img src="image/rianda no bg.png" alt="rianda tampan" >         
             </div>
           </div>
       </header>
     
+
+    <!-- start of toggle modal -->
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- end of toggle modal -->
+
     <!-- end header -->
 
     <section class="myskill">
@@ -72,7 +100,7 @@
     <section class="mini_project">
       <div class="container-fluid">
         <div class="row">
-          <h5>My mini project in MSIB</h5>
+          <h4>My mini project in MSIB</h4>
           <div class="col-md-4">
             <img src="image/landingpage.png" alt="landingpage" style="height: 20rem; width: 25rem;">
             <img src="image/loogin.png" alt="login" style="height: 20rem; width: 25rem;">
@@ -88,7 +116,87 @@
         </div>
       </div>
     </section>
-          
+
+    <section class="profile" style="align-items: center;">
+      <div class="container ">
+        <div class="row">
+          <div class="kiri col-md-6">
+            <img src="image/Rianda 1.jpg" alt="rianda">
+          </div>
+          <div class="kanan col-md-6" id="profile">
+            <h4> WHO I'M ?</h4>
+            <p>
+              Mahasiswa Sistem Informasi di Institut Bisnis
+Nusantara yang memiliki ketertarikan dalam
+Pengembangan website bagian frontend dan
+backend. Memiliki pengalaman dengan HTML - CSS
+(Boostrap), python (Django), serta pengalaman
+dalam pembentukan website mini project
+Smartbeez Selama mengikuti Studi independent
+di PT Maleo edukasi teknologi. Bersemangat
+untuk belajar dan berkontribusi dalam
+lingkungan kerja profesional
+
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <h4>Organizational Experience</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Humas-ex Hima Komputer IBN</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2023-2024</h6>
+                <p class="card-text">Sebagai fasilitator atau penghubung HIMAKOM
+                  dengan berbagai pihak eksternal. Saya
+                  bertanggung jawab mengelola Email HIMAKOM.
+                  Melaporkan Email masuk kepada kepala divisi
+                  dan seluruh anggota HIMAKOM.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div> 
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <div class="card-body">
+                <h5 class="card-title">Asset dan IT UVON RADIO</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">2023-sekarang</h6>
+                <p class="card-text">
+                  Sebagai asset dan it saya bertanggung jawab atas
+                  :
+                  <ol>
+                    <li>  Mengurus dan mengkoordinir keperluan teknis siaran,
+                      meliputi: mic, speaker, computer dan mixer
+                      </li>
+                    <li> Bertanggung jawab terhadap maintenance Website,
+                      Streaming dan jejaring social lainnya
+                      </li>
+                    <li>  Bertanggung atas perlengkapan Uvon radio Jakarta
+                    </li>
+                  </ol>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- this my js -->
+     <script src="index.js"></script>
     <!-- this js of boostrap with cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
