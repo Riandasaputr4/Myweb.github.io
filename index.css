@@ -19,9 +19,11 @@
 
 body{
   background-color:black !important;
+  overflow-x: hidden;
   
 }
 header{
+  font-family: 'Montserrat', sans-serif;
   height: 35rem;
   width: auto;
   background-image: var(--gradient);
@@ -30,6 +32,7 @@ header{
   overflow: hidden;
 }
 header .navbar-nav{
+  font-family: 'Montserrat', sans-serif;
   color: white !important;
   background-color: #941212;
   text-decoration: none;
@@ -61,7 +64,6 @@ header .container-fluid{
 header .container-fluid img{
   height: 100%;
   width: 50rem;
-  margin: 0.1rem 0;
   position: relative;
 }
 
@@ -69,12 +71,16 @@ header .container-fluid .row .kiri h1{
   position: absolute;
   color: white;
   margin: 5rem -8rem;
+  font-family: 'Poppins', sans-serif;
  
 }
 header .container-fluid .row .kiri P{
   position: absolute;
   color: rgb(184, 184, 184);
   margin: 4rem -8rem;
+  font-family: "Moon Dance", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 header .container-fluid .row .kiri .btn{
   position: absolute;
@@ -108,8 +114,11 @@ header .container-fluid .row .kiri .btn{
   
 }
 .mini_project .container-fluid h4{
-  margin-bottom: 4rem;
-  color: white;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin:4rem 2rem;
+  color: rgb(254, 254, 254);
 }
 .mini_project .container-fluid img{
   margin-bottom: 2rem;
@@ -128,6 +137,9 @@ header .container-fluid .row .kiri .btn{
 }
 
 .experience h4 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
   color: white;
   margin-bottom: 4rem;
   text-align: center; /* Membuat judul lebih rapi */
@@ -160,6 +172,9 @@ header .container-fluid .row .kiri .btn{
   color: black;
   margin: 1rem 0;
   text-align: center;
+  font-family: "Racing Sans One", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
 .experience .container .card h6{
   color: #000;
@@ -167,6 +182,7 @@ header .container-fluid .row .kiri .btn{
 }
 
 .experience .container .card p {
+  font-family: 'Poppins', sans-serif;
   margin-top: 2rem;
   padding: 0 1rem; /* Memberikan ruang agar teks lebih rapi */
   font-size: 1rem;
@@ -220,9 +236,13 @@ header .container-fluid .row .kiri .btn{
   padding: 4rem 3rem;
 }
 .profile .container .kanan h4{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 2rem !important;
   color:white;
 }
 .profile .container .kanan p{
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.2rem !important;
   color: white;
   margin-top:3rem ; 
 }
